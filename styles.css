@@ -1,0 +1,109 @@
+body {
+    margin: 0.3em;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+    /* #F6F7FB */
+}
+
+/* Header */
+
+.header-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.7em;
+}
+.icons {
+    width: 2em;
+}
+
+/* Profile card */
+
+#profile {
+    position: relative;
+    width: 100%;
+}
+#profile .avatar {
+    width: 100%;
+    border-radius: 15px;
+}
+.profile-info {
+    position: absolute;
+    color: #F8F8F8;
+    bottom: 10px;
+    left: 10px;
+    text-shadow: 1px 1px 4px black;
+}
+.name-age {
+    font-size: 2rem;
+    margin: 0.3em 0;
+
+}
+.bio {
+    margin-top: 0;
+}
+
+/* Actions */
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 4em;
+}
+.actions button {
+    margin: 0.7em;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    padding: 1.4em;
+}
+.actions button img {
+    width: 3em;
+    height: 3em;
+}
+#like {
+    display: none;
+    position: absolute;
+    left: 38px;
+    top: 122px;
+    transform: rotate(-20deg);
+}
+#like img, #nope img {
+    width: 11em;
+    height: 5.5em;
+}
+#nope {
+    display: none;
+    position: absolute;
+    left: 168px;
+    top: 122px;
+    transform: rotate(20deg)
+}
+.end-message {
+    text-align: center;
+    margin-top: 7em;
+    font-size: 1.3rem;
+}
+
+/* Hover and active */
+
+#accept-button:hover 
+ {
+    background: #DBFFF4;
+}
+#reject-button:hover {
+    background: #FFE7EF;
+}
+
+/* Media queries */
+
+@media(min-width: 800px) {
+    body {
+        margin: 0 35em;
+    }
+    #like {
+        left: 600px;
+    }
+    #nope {
+        left: 750px;
+    }
+}
